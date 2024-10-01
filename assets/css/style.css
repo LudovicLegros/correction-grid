@@ -1,0 +1,80 @@
+/* DEFINITION DU TEMPLATE DE GRID GRACE AU TEMPLATE AREA */
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "boxa boxb boxc boxc"
+    "boxa boxd boxe boxf"
+    "boxh boxi boxe boxg"
+    "boxj boxi boxk boxk"
+    ;
+    gap:1em;
+    background-color: green;
+    height: 1000px;
+    width: 1000px;
+}
+
+
+
+.container div{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* On associe chaque bloc au terme défini dans le template area */
+
+.blocA{
+    grid-area: boxa;
+}
+
+.blocB{
+    grid-area: boxb;
+}
+
+.blocC{
+    grid-area: boxc;
+}
+
+.blocD{
+    grid-area: boxd;
+}
+
+.blocE{
+    grid-area: boxe;
+}
+
+.blocF{
+    grid-area: boxf;
+}
+
+.blocG{
+    grid-area: boxg;
+}
+
+.blocH{
+    grid-area: boxh;
+}
+
+.blocI{
+    grid-area: boxi;
+}
+
+.blocJ{
+    grid-area: boxj;
+}
+
+.blocK{
+    grid-area: boxk;
+}
+
+
+
+
+
+
+
+
